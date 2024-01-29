@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../pictures/UAM6.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+.menu {
+    border-radius: 20px;
+    background-color: #000000;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.menu li a:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.menu li a {
+    background-color: black;
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu ul li {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header,
+    .footer {
+        padding: 10px;
+    }
+
+    .submenu {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .menu ul li:hover .submenu {
+        display: none;
+    }
+
+
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    /*cambiar a fixed para sacar de la caja*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    /* Puedes ajustar el padding según tus preferencias */
+}
+
+#pie strong {
+    font-style: normal;
+}
+
+#pie #iconos {
+    border-bottom: 7px solid orange;
+    /* Puedes ajustar el estilo del borde según tus preferencias */
+    padding-bottom: 10px;
+    /* Ajusta según sea necesario para la separación */
+    width: 100%;
+    /* Hace que la línea cubra todo el ancho del contenedor */
+}
+
+
+.contact-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+#iconos {
+    text-align: right;
+}
+
+#iconos a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#texto {
+    font-size: 13px;
+}
+
+
+/*TARJETAS*/
+
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .8s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow:0 5px 10px black;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: black;
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: black;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color:#f3f3f3;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 300px;   
+    margin-bottom: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.card h3 {
+    margin-top: 0;
+}
+.card p {
+    margin-bottom: 0;
+}
+.link a {
+    color: rgb(255, 136, 0);
+}
+
+
+
+.text-box p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 20px;
+    float: left;
+    max-width: 270px;
+}
+
+
+iframe{
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 5px #000000;
+    border-radius: 20px;
+}
+
+fieldset{
+    margin-top: 100px;
+}
+
+
+/* Consulta de medios para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .menu {
+      padding: 5px;
+    }
+  
+    #img1 {
+      width: 100%;
+      height: auto;
+    }
+  
+    section img:hover {
+      width: 100%;
+    }
+  }
+
+
+  button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    justify-content: center;
+   
+  }
+
+ 

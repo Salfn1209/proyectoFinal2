@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../pictures/UAM4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Resto de tu CSS existente */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.menu {
+    background-color: #000000;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.menu li a:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.menu li a {
+    background-color: black;
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#pie strong {
+    font-style: normal;
+}
+
+#pie #iconos {
+    border-bottom: 7px solid orange;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#iconos {
+    text-align: right;
+}
+
+#iconos a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#texto {
+    font-size: 13px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* Agrega esta línea para permitir que las imágenes se envuelvan en pantallas más pequeñas */
+    justify-content: center;
+    margin: auto;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+section img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor padre */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    margin: 5px; /* Ajusta el espacio entre las imágenes según sea necesario */
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: auto; /* Esto centrará el section horizontalmente */
+  width: 900px;
+  height: 430px;
+  margin-top: 10px;
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}

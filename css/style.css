@@ -1,0 +1,166 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(../pictures/UAM3.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Contenido */
+.content {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* Menú */
+.menu {
+  background-color: #000000;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.menu li a:hover {
+  background-color: rgb(255, 153, 0);
+}
+
+.menu li a {
+  background-color: black;
+  color: #f3f3f3;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Puedes ajustar el padding según tus preferencias */
+}
+
+#pie strong {
+  font-style: normal;
+}
+
+#pie #iconos {
+  border-bottom: 7px solid orange;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.icon {
+  vertical-align: middle;
+  width: 20px;
+  margin-right: 10px;
+}
+
+#iconos {
+  text-align: right;
+}
+
+#iconos a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#texto {
+  font-size: 13px;
+}
+
+#titulo {
+  font-size: 30px;
+}
+
+#img1 {
+  width: 700px;
+  height: 600px;
+}
+
+#img1 img {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* Consulta de medios para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .menu {
+    padding: 5px;
+  }
+
+  #img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  section img:hover {
+    width: 100%;
+  }
+}
